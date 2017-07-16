@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import BadgeList from "./BadgeList";
+import ProgressList from "./ProgressList";
 import { Container, Header } from "semantic-ui-react";
 import glamorous from "glamorous";
 
@@ -25,6 +26,16 @@ class App extends Component {
             content="Badges"
           />
           <BadgeList />
+        </StyledContainer>
+        <StyledContainer fluid>
+          <Header
+            size="large"
+            textAlign="left"
+            dividing
+            icon="tasks"
+            content="Progress"
+          />
+          <ProgressList userId={1} />
         </StyledContainer>
       </div>
     );
