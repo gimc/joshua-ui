@@ -1,11 +1,16 @@
 import React from "react";
+import glamorous from "glamorous";
+
+const BadgeName = glamorous.p({
+  "font-weight": "bold"
+});
 
 function Badge({ props }) {
   return (
     <div>
-      <p>
+      <BadgeName>
         {props.name}
-      </p>
+      </BadgeName>
       <p>
         {props.description}
       </p>
