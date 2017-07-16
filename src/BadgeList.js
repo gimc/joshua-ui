@@ -1,9 +1,9 @@
 import React from "react";
 import { gql, graphql } from "react-apollo";
-import { Button, Card, Image } from "semantic-ui-react";
+import { Card, Image } from "semantic-ui-react";
 import sapling from "./images/sapling.png";
 
-function BadgeList({ data: { badges, refresh } }) {
+function BadgeList({ data: { badges } }) {
   return (
     <div>
       {badges === undefined
@@ -27,7 +27,6 @@ function BadgeList({ data: { badges, refresh } }) {
               </Card>
             )}
           </Card.Group>}
-      <Button>Refresh</Button>
     </div>
   );
 }

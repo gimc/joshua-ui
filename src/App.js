@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import BadgeList from "./BadgeList";
 import ProgressList from "./ProgressList";
+import Cheat from "./Cheat";
 import { Container, Header } from "semantic-ui-react";
 import glamorous from "glamorous";
 
@@ -36,6 +37,9 @@ class App extends Component {
             content="Progress"
           />
           <ProgressList userId={1} />
+        </StyledContainer>
+        <StyledContainer fluid>
+          <Cheat />
         </StyledContainer>
       </div>
     );
