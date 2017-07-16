@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "glamor": "^3.0.0-3",
+    "glamorous": "^3.23.5",
     "husky": "^0.14.3",
     "lint-staged": "^4.0.1",
     "prettier": "^1.5.3",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-apollo": "^1.4.3",
     "react-dom": "^15.6.1",
